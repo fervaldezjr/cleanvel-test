@@ -1,0 +1,643 @@
+/*
+########### Indice #########################################
+
+=======================================================Index
+1 - ESTILOS GENERALES 
+2 - NAVEGACION
+3 - MAIN, BANNER CON SLOGAN
+4 - SECTION, TRABAJA CON NOSOTROS
+5 - SECTION, LIMPIEZA FRECUENTE
+6 - SECTION, LIMPIEZA OCASIONAL
+7 - FOOTER
+8 - MENU HAMBURGUESA
+
+=======================================================Servicios
+9 - MAIN, NUESTROS SERVICIOS
+
+=======================================================Porque Elegirnos
+10 - MAIN, PORQUE ELEGIRNOS
+
+=======================================================Nosotros
+11 - MAIN, NOSOTROS
+
+=======================================================Contacto
+12 - MAIN, CONTACTO
+*/
+
+/* ##############  1 - ESTILOS GENERALES   ############################################ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;  /* Scroll más suave */
+}
+
+body { 
+    font-family: 'Inter', sans-serif; /* Fuente general */
+}
+
+img {
+    width: 100%; /* Imagenes ocupando el 100% del espacio disponible */
+}
+
+.container {
+    margin: 0 10px;
+}
+
+
+/* ############# 2 - NAVEGACION #####################################################*/
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+    min-width: 70px;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 3px;
+}
+
+.nav-link {
+    color: #56c1d4;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 8px 15px
+}
+
+.nav-link:hover,
+.button-main:hover {
+    background-color: #56c1d4;
+    color: white;
+    border-radius: 7px;
+    transition: .7s;
+}
+
+/* ############# 3 - MAIN, BANNER CON SLOGAN #####################################################*/
+.main {
+    background-color: #56c1d4;
+    
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15em 0;
+}
+
+.bkg-index {
+    background-image: url(../images/guantes-duo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.fa-leaf {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.title-main {
+    padding: 0.5em 0 0;
+    margin: 0 3em;
+    font-size: 3em;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.description-main {
+    padding: 1em 0 2em;
+    margin: 0 3em;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: .80;
+}
+
+/* ############# 4 - SECTION, TRABAJA CON NOSOTROS #####################################################*/
+
+.unete-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.card-text {
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    color: #56c1d4;
+}
+
+.card-text h2 {
+    font-size: 1em;
+}
+
+.card-text h3, p {
+    font-size: 2em;
+    padding: 0.3em;
+}
+
+.card-text p {
+    font-size: .90em;
+    font-weight: 600;
+    opacity: .85;
+}
+
+.card-text a {
+    width: fit-content;
+    margin: 1em auto;
+    font-size: 1em;
+    padding: 15px 20px;
+    background-color: #56c1d4;
+    color: #ffffff;
+    border-radius: 7px;
+    font-weight: 600;
+    border: solid 1px #56c1d4;
+}
+
+.card-text a:hover {
+    border: solid 1px #56c1d4;
+    background-color: #ffffff;
+    color: #56c1d4;
+    transition: .7s;
+}
+
+.card-image {
+    width: 50%;
+    padding: 1em;
+}
+
+/* ############# 5 - SECTION, LIMPIEZA FRECUENTE #####################################################*/
+.container-tranquilidad {
+    background-color: #56c1d4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 7em 0 5em 0;
+    color: #ffffff;
+    height: 50vh;
+}
+
+.container-tranquilidad h2 {
+    font-size: 1em;
+}
+
+.container-tranquilidad h3 {
+    font-size: 2em;
+    padding: 0.3em;
+}
+
+.tranquilidad-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.tranquilidad-link {
+    margin: 15px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    color: #56c1d4;
+    font-weight: 600;
+    font-size: 1em;
+    border: solid 1px #56c1d4;
+}
+
+.tranquilidad-link:hover {
+    border: solid 1px #ffffff;
+    background-color: #56c1d4;
+    color: #ffffff;
+    transition: .7s;
+}
+
+/* ############# 6 - SECTION, LIMPIEZA OCASIONAL #####################################################*/
+.container-ocasionalmente {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 7em 0 5em 0;
+    color: #56c1d4;
+    height: 50vh;
+}
+
+.container-ocasionalmente h2 {
+    font-size: 1em;
+}
+
+.container-ocasionalmente h3 {
+    font-size: 2em;
+    padding: 0.3em;
+}
+
+.ocasionalmente-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.ocasionalmente-link {
+    margin: 15px;
+    padding: 15px 20px;
+    background-color: #56c1d4;
+    border-radius: 7px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1em;
+    border: solid 1px #56c1d4;
+}
+
+.ocasionalmente-link:hover {
+    border: solid 1px #56c1d4;
+    background-color: #ffffff;
+    color: #56c1d4;
+    transition: .7s;
+}
+
+/* ############# 7 - FOOTER #####################################################*/
+.footer {
+    background-color: #56c1d4;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-section-top {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0 0 0;
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: .80em;
+}
+
+.footer-tittle,
+.footer-link {
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.footer-link:hover {
+    background-color: #ffffff;
+    color: #56c1d4;
+    transition: .7s;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    color: #ffffff;
+}
+
+.copy-text {
+    font-size: .80em;
+}
+
+.copy-design {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*######################## 8 - MENU HAMBURGUESA ########################*/
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li a{
+    display: block;   
+}
+
+.toggle-button{
+    position: absolute;
+    top: 3.8rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #56c1d4;
+    border-radius: 10px;
+}
+
+/* ############################ 9 - MAIN, NUESTROS SERVICIOS ################################## */
+.fa-hand-sparkles {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.unete-card-two {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.image-servicios {
+    object-fit: cover;
+}
+
+/* ######################## 10 - MAIN, PORQUE ELEGIRNOS ########################################################### */
+.fa-stream {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.bkg-elegirnos {
+    background-image: url(../images/porque-elegirnos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.porque-elegirnos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.container-porque-elegirnos {
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+    margin: 0 1em;
+}
+
+.elegirnos-cards {
+    padding: 1em;
+}
+
+.elegirnos-cards i {
+    font-size: 3em;
+    color: #56c1d4;
+}
+
+.elegirnos-cards h2 {
+    color: #56c1d4;
+}
+
+.elegirnos-cards p {
+    color: #56c1d4;
+    font-size: 1em;
+}
+
+.container-image-elegirnos {
+    display: flex;
+    justify-content: center;
+}
+
+.elegirnos-image {
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ######################## 11 - MAIN, NOSOTROS ########################################################### */
+.fa-address-card {
+    font-size: 4em;
+    color: #ffffff;
+}
+
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0;
+}
+
+.nosotros-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.nosotros-text h2 {
+    color: #56c1d4;
+    font-size: 2em;
+}
+
+.nosotros-text p {
+    color: #56c1d4;
+    font-size: 1.3em;
+    font-weight: 600;
+    opacity: .80;
+}
+
+/*############################### 11 - MAIN, CONTACTO ##########################################*/
+.container-contacto {
+    padding: 7em 0;
+}
+
+.contacto-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #56c1d4;
+}
+
+.contacto-card-container {
+    display: flex;
+    justify-content: center;
+    color: #56c1d4;
+    padding: 5em 0;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1em 3em;
+    border: solid 1px #56c1d4;
+    padding: 1.5em;
+    border-radius: 20px;
+}
+
+.contact-image {
+    width: auto;
+}
+
+.contact-link {
+    padding: 10px;
+    margin-top: 1em;
+    color: #56c1d4;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 769px){
+    .toggle-button{
+        display: flex;
+        z-index: 1000;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: #ffffff;
+        top: 0;
+        padding: auto auto;
+        z-index: 100;
+        align-items: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links li{
+        text-align: center;
+        padding: 20px 0px;
+        font-size: 1.8em;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .unete-card {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .image-servicios {
+        height: 400px;
+    }
+
+    .tranquilidad-botones,
+    .ocasionalmente-botones,
+    .unete-botones {
+        font-size: .74em;
+    }
+
+    .unete-card-two {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
+    .container-porque-elegirnos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elegirnos-cards p {
+        margin: 0 4em;
+    }
+
+    .nosotros-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros-text {
+        width: auto;
+        margin-bottom: 1em;
+    }
+
+    .nosotros-text p {
+        margin: 0;
+        font-size: .90em;
+    }
+
+    .copy-text {
+        font-size: .65em;
+    }
+}
+
+@media (max-width: 550px){
+    .tranquilidad-botones,
+    .ocasionalmente-botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 376px){
+    .image-servicios {
+        height: 320px;
+    }
+}
+
+.bkg-nosotros {
+    background-image: url(../images/nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(3)
+}
